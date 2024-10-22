@@ -492,7 +492,6 @@ li img {
     }
 
     .pdfs {
-        gap: 10px;
         margin-bottom: 15px;
     }
 
@@ -1050,8 +1049,32 @@ li img {
     width: 8rem;
     border-radius: 22px;
 }
+    .sub-card {
+    width: 20rem;
+    }
+    .materials, .pdfs {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    .popular-pdf-sec {
+    margin-top: 4rem;
 }
-
+.f-card {
+    width: 20rem;
+}
+    .f-card img {
+    width: 140px;
+    height: 140px;
+    margin: 1rem;
+    }
+    .f-para {
+    font-size: 20px;
+}
+     .founder-cards {
+        height: 90vh;
+    }
+}
 .show-menu {
     max-height: 50vh;
 }
+
