@@ -1046,6 +1046,10 @@ li img {
     .contact-form {
         width: 22rem;
     }
+    .sub-bar {
+    width: 8rem;
+    border-radius: 22px;
+}
 }
 
 .show-menu {
