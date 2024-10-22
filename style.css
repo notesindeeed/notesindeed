@@ -1021,6 +1021,9 @@ li img {
         display: block;
         margin-right: 0.2rem;
     }
+    .ftf-cards {
+    height: 100%;
+}
 
     .sub-head {
         margin: 0 0.4rem;
@@ -1073,6 +1076,10 @@ li img {
      .founder-cards {
         height: 90vh;
     }
+    .first {
+    margin: 1rem 0;
+    }
+    
 }
 .show-menu {
     max-height: 50vh;
