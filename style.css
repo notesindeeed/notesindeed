@@ -259,8 +259,7 @@ li img {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
+    top: 38%;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -274,11 +273,12 @@ li img {
     justify-content: center;
     align-items: center;
     margin: 0 4px;
+    background-color: #3b3a3a54;
+    border: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev {
@@ -420,8 +420,7 @@ li img {
 .materials, .pdfs {
     display: grid;
     gap: 2rem;
-    margin-bottom: 30px;
-    margin-left: 40px;
+    margin: 0 40px 30px 40px;
     overflow-x: auto;
     scrollbar-width: none;
     grid-template-columns: repeat(10, 1fr);
