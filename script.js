@@ -138,8 +138,8 @@ const initmSlider = () => {
     });
 
     const handlemSlideButtons = () => {
-        mslideBtns[0].style.display = mslideList.scrollLeft <= 0 ? "none" : "block";
-        mslideBtns[1].style.display = mslideList.scrollLeft >= maxmScrollLeft ? "none" : "block";
+        mslideBtns[0].style.display = mslideList.scrollLeft <= 0 ? "none" : "flex";
+        mslideBtns[1].style.display = mslideList.scrollLeft >= maxmScrollLeft ? "none" : "flex";
     }
 
     const updatemScrollThumbPos = () => {
@@ -237,8 +237,8 @@ const initSlider = () => {
     });
 
     const handleSlideButtons = () => {
-        m[0].style.display = slideList.scrollLeft <= 0 ? "none" : "block";
-        m[1].style.display = slideList.scrollLeft >= maxScrollLeft ? "none" : "block";
+        m[0].style.display = slideList.scrollLeft <= 0 ? "none" : "flex";
+        m[1].style.display = slideList.scrollLeft >= maxScrollLeft ? "none" : "flex";
     }
 
     const updateScrollThumbPos = () => {
