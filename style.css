@@ -434,6 +434,14 @@ li img {
     display: none;
 }
 
+.material {
+    background: #ffff98ed;
+}
+
+.pdf {
+    background: lightblue;
+}
+
 .material, .pdf {
     width: 155px;
     height: 235px;
