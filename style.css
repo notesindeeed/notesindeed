@@ -956,7 +956,7 @@ li img {
 
 @media(max-width: 700px) {
     .sub-img {
-    width: 125px;
+    width: 110px;
 }   
     .contact {
         display: grid;
