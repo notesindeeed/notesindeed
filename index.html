@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notesindeed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <div class="head-img"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+        <div class="head-title">
+            <li><img class="upload-icon" src="img/upload.svg" alt=""></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login/login.html">Login</a></li>
+            <li><img src="img/add-friends.png" onclick="settingsMenuToggle()" alt=""></li>
+        </div>
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Maqsood Ahmed</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="img/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+        <span class="search">
+            <input class="search-bar" type="text" placeholder="Search">
+            <img src="img/search.svg" alt="">
+        </span>
+
+        <div class="more-menu">
+            <img src="img/icon/Hamburger_icon.png" onclick="toggleMoreMenu()" alt="">
+        </div>
+    </header>
+
+    <div class="first sec">
+        <div class="ftf">
+            <div class="ftf-cards" id="slidesWrapper">
+                <div class="ftfcard">
+                    <img src="img/mind-map.png" alt="">
+                </div>
+                <div class="ftfcard">
+                    <img src="img/From the founder.png" alt="">
+                </div>
+                <div class="ftfcard">
+                    <img src="img/download-any-pdf.png" alt="">
+                </div>
+                <div class="ftfcard">
+                    <img src="img/mind-map.png" alt="">
+                </div>
+                <div class="ftfcard">
+                    <img src="img/From the founder.png" alt="">
+                </div>
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            <div class="dots-container">
+                <span class="dot" onclick="setSlide(0)"></span>
+                <span class="dot" onclick="setSlide(1)"></span>
+                <span class="dot" onclick="setSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="subjects sec">
+        <div class="sub-head">
+            <h2 class="sub-title">Popular Subjects</h2>
+            <span class="search">
+                <input class="search-bar sub-bar" type="text" placeholder="Search">
+                <img src="img/search.svg" alt="">
+            </span>
+        </div>
+        <div class="sub-cards">
+            <div class="sub-card eng">
+                <img class="sub-img" src="img/subject/ENGLISH.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - ENGLISH</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a hrefa href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card mts">
+                <img class="sub-img" src="img/subject/MATHEMATICS.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - MATHS</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hisc">
+                <img class="sub-img" src="img/subject/HISTORY&CIVICS.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - History&Civics</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card geo">
+                <img class="sub-img" src="img/subject/GEOGRAPHY.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Geography</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card phy">
+                <img class="sub-img" src="img/subject/PHYSICS.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Physics</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card chem">
+                <img class="sub-img" src="img/subject/CHEMISRY.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Chemistry</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card bio">
+                <img class="sub-img" src="img/subject/BIOLOGY.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Biology</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card comp">
+                <img class="sub-img" src="img/subject/COMPUTER.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Computer</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card acc">
+                <img class="sub-img" src="img/subject/ACCOUNTANCY.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Accountancy</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <aspan class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                        <spana>
+                </a>
+            </div>
+            <div class="sub-card eco">
+                <img class="sub-img" src="img/subject/ECONOMICS.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Economics</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card bst">
+                <img class="sub-img" src="img/subject/BUSINESS STUDIES.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Business Studies</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card comm">
+                <img class="sub-img" src="img/subject/COMMERCE.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Commerce</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="more-sub-cards sub-cards">
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+            <div class="sub-card hin">
+                <img class="sub-img" src="img/subject/HINDI.svg" alt="">
+                <span class="sub-para">
+                    <h4>Subject - Hindi</h4>
+                    <h5>No of Pdf(s) - 5</h5>
+                </span>
+                <a href="" class="layer">
+                    <span class="l-cont">
+                        <img class="layer-img" src="img/open.png" alt="">
+                        <h3 class="layer-title">Open</h3>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="sub-card-more" onclick="moreSub()">
+            <p>more</p>
+            <img src="img/more.png" alt="">
+        </div>
+        <div class="sub-card-less d-n" onclick="moreSub()">
+            <p>less</p>
+            <img src="img/more.png" alt="">
+        </div>
+    </div>
+
+    <div class="study-materials-sec sec">
+        <h2>Study Materials</h2>
+        <div class="materials-slider">
+            <div class="materials">
+                <span class="material">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                    <img src="img/study-material-icon/previousyearpaper.svg" alt="">
+                </span>
+                <span class="material">
+                    <h3>Sample</h3>
+                    <h4>question papers</h4>
+                    <img src="img/study-material-icon/sample question paper.svg" alt="">
+                </span>
+                <span class="material">
+                    <h3>Revision</h3>
+                    <h4>Notes</h4>
+                    <img src="img/study-material-icon/review sample.png" alt="">
+                </span>
+                <span class="material">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                    <img src="img/study-material-icon/previousyearpaper.svg" alt="">
+                </span>
+                <span class="material">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                    <img src="img/study-material-icon/previousyearpaper.svg" alt="">
+                </span>
+                <span class="material">
+                    <h3>Books</h3>
+                    <h4>e-books</h4>
+                    <img src="img/study-material-icon/ebook.svg" alt="">
+                </span>
+                <span class="material">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                    <img src="img/study-material-icon/previousyearpaper.svg" alt="">
+                </span>
+            </div>
+            <button id="m-prev" class="prev material-slide-btn d-n">&#10094;</button>
+            <button id="m-next" class="next material-slide-btn">&#10095;</button>
+            <div class="material-scrollbar">
+                <div class="material-scrollbar-track">
+                    <div class="material-scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-pdf-sec sec">
+        <h2>Popular Pdf</h2>
+        <div class="pdfs-slider">
+            <button id="prev-slide" class="pdf-slide-btn prev d-n">&#10094;</button>
+            <div class="pdfs">
+                <span class="pdf shadow">
+                    <h3>Mathematics</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Sample</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Revision</h3>
+                    <h4>Notes</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Books</h3>
+                    <h4>e-books</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+                <span class="pdf shadow">
+                    <h3>Previous Year</h3>
+                    <h4>question papers</h4>
+                </span>
+            </div>
+            <button id="next-slide" class="pdf-slide-btn next">&#10095;</button>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="free-ebook">
+        <img src="img/get-free-ebook.png" alt="">
+    </div>
+
+    <div class="founder-sec sec">
+        <div class="founder-cards">
+            <div class="founder">
+                <h2 class="f-title"> Founding Members</h2>
+                <div class="f-cards">
+                    <span class="f-card">
+                        <span class="f-detail">
+                            <img src="img/founders/DivyankShaw.jpg" alt="" class="f-img">
+                            <span class="para">
+                                <h2 class="f-para">Divyank Kr. Shaw</h2>
+                                <p>Founder & CEO</p>
+                                <p>Chief Executive Officer</p>
+                            </span>
+                        </span>
+                        <p class="f-quote"><i> "E-learning is not a phase its is the futures mainstay of education"</i>
+                        </p>
+                    </span>
+                    <span class="f-card">
+                        <span class="f-detail">
+                            <img src="img/founders/MaqsoodAhmed.jpg" alt="" class="f-img">
+                            <span class="para">
+                                <h2 class="f-para">Maqsood Ahmed</h2>
+                                <p>C0-Founder & MTD</p>
+                                <p>Managing Technical Director</p>
+                            </span>
+                        </span>
+                        <p class="f-quote"><i> "E-learning is not a phase its is the futures mainstay of education"</i>
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="founder">
+                <h2 class="f-title"> Our Team</h2>
+                <div class="f-cards">
+
+                    <span class="f-card">
+                        <span class="f-detail">
+                            <img src="img/founders/MuskanYadav.jpg" alt="" class="f-img">
+                            <span class="para">
+                                <h2 class="f-para">Muskan Yadav</h2>
+                                <p>CSD</p>
+                                <p>Customer Service Director</p>
+                            </span>
+                        </span>
+                        <p class="f-quote"><i> "E-learning is not a phase its is the futures mainstay of education"</i>
+                        </p>
+                    </span>
+                    <span class="f-card">
+                        <span class="f-detail">
+                            <img src="img/founders/ShaliniShaw.jpg" alt="" class="f-img">
+                            <span class="para">
+                                <h2 class="f-para">Shalini Shaw</h2>
+                                <p>BOD</p>
+                                <p>Business Operation Director</p>
+                            </span>
+                        </span>
+                        <p class="f-quote"><i> "E-learning is not a phase its is the futures mainstay of education"</i>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="fdot" onclick="setSlide(0)"></span>
+            <span class="fdot" onclick="setSlide(1)"></span>
+        </div>
+    </div>
+
+    <div class="review-sec sec">
+        <h4>What our users say</h4>
+        <div class="review-cards">
+            <div class="review-card shadow">
+                <p>The LIVE Interactive classes with visual explanations helped me learn and retain all the topics
+                    better.
+                </p>
+                <span class="review-details">
+                    <img src="img/review/review1.jpeg" alt="">
+                    <h3>Maya Yadav</h3>
+                </span>
+            </div>
+            <div class="review-card shadow">
+                <p>I took classes whenever I was ready and made use of the notes and recorded videos for revision. The
+                    teachers helped me make every concept crystal clear.</p>
+                <span class="review-details">
+                    <img src="img/review/review2.jpeg" alt="">
+                    <h3>Maya Yadav</h3>
+                </span>
+            </div>
+            <div class="review-card shadow">
+                <p>I took classes whenever I was ready and made use of the notes and recorded videos for revision. The
+                    teachers helped me make every concept crystal clear.</p>
+                <span class="review-details">
+                    <img src="img/review/review2.jpeg" alt="">
+                    <h3>Maya Yadav</h3>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats sec">
+        <span class="stats-head">
+            <h4>Our Stats</h4>
+            <h5>Making e-education accessible across the globe</h5>
+        </span>
+        <div class="stats-details">
+            <div class="stats-detail">
+                <div class="stat">
+                    <span class="counter">
+                        <h4 class="count" data-target="1000">0 </h4>
+                        <h4>+</h4>
+                    </span>
+                    <p>notes</p>
+                </div>
+                <div class="stat">
+                    <span class="counter">
+                        <h4 class="count" data-target="7000">0 </h4>
+                        <h4>+</h4>
+                    </span>
+                    <p>downloads</p>
+                </div>
+                <div class="stat">
+                    <span class="counter">
+                        <h4 class="count" data-target="50">0 </h4>
+                        <h4>+</h4>
+                    </span>
+                    <p>Teachers</p>
+                </div>
+                <div class="stat">
+                    <span class="counter">
+                        <h4 class="count" data-target="800">0 </h4>
+                        <h4>+</h4>
+                    </span>
+                    <p>DPPs</p>
+                </div>
+            </div>
+            <img src="img/study-material-icon/india.svg" alt="">
+        </div>
+    </div>
+
+    <div class="contact-sec sec">
+        <div class="contact">
+            <div class="contact-opts">
+                <h4 class="">Contact Us</h4>
+                <div class="contact-opt shadow">
+                    <img src="img/call.svg" alt="">
+                    <span class="cont-detail">
+                        <h3>Call Us</h3>
+                        <p>7003299475</p>
+                    </span>
+                </div>
+                <div class="contact-opt shadow">
+                    <img src="img/mail.svg" alt="">
+                    <span class="cont-detail">
+                        <h3>Emaill Us</h3>
+                        <p>contactus@notesindeed.com</p>
+                    </span>
+                </div>
+                <div class="contact-opt shadow">
+                    <img src="img/location.svg" alt="">
+                    <span class="cont-detail">
+                        <h3>Location</h3>
+                        <p>Kolkata, West Bengal, India</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h4>Help/FAQ</h4>
+                <div class="form-detail shadow">
+                    <span class="user-detail">
+                        <input type="text" class="contact-info" placeholder="First Name">
+                        <input type="text" class="contact-info" placeholder="Last Name">
+                    </span>
+                    <input type="email" class="contact-info" placeholder="Email">
+                    <input type="text" class="contact-info" placeholder="Subject">
+                    <input type="text" class="contact-info msg" placeholder="Message">
+                    <button type="button" class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-sec sec">
+        <div class="pbs">
+            <h4>Pdf by Subjects</h4>
+            <p><a href="">
+                    English
+                </a></p>
+            <a href="">
+                <p>Mathematics</p>
+            </a>
+            <a href="">
+                <p>Physics</p>
+            </a>
+            <a href="">
+                <p>Chemistry</p>
+            </a>
+            <a href="">
+                <p>Biology</p>
+            </a>
+            <a href="">
+                <p>Computer</p>
+            </a>
+            <a href="">
+                <p>Accountancy</p>
+            </a>
+            <a href="">
+                <p>Commerce</p>
+            </a>
+            <a href="">
+                <p>Business Studies</p>
+            </a>
+            <a href="">
+                <p>Economics</p>
+            </a>
+            <a href="">
+                <p>Hindi</p>
+            </a>
+            <a href="">
+                <p>History&Civics</p>
+            </a>
+            <a href="">
+                <p>Geography</p>
+            </a>
+            <a href="">
+                <p>Mathematics</p>
+            </a>
+        </div>
+        <span class="line"></span>
+        <div class="about">
+            <span class="about-founder">
+                <h4>About the Founders</h4>
+                <a href="">
+                    <p>Divyank Kr Shaw</p>
+                </a>
+                <a href="MaqsoodAhmed">
+                    <p>Maqsood Ahmed</p>
+                </a>
+            </span>
+            <span class="about-team">
+                <h4>About the Team</h4>
+                <p>Muskan Yadav</p>
+                <p>Shalini Shaw</p>
+            </span>
+
+        </div>
+        <span class="line"></span>
+        <span>
+            <h4>Contact Us</h4>
+            <p>contactus@notesindeed.com</p>
+            <p>maqsoodahmed@notesindeed.com</p>
+            <p>divyankshaw@notesindeed.com</p>
+            <div class="contact-opts-phone">
+                <div class="contact-opt-phone">
+                    <a href=""><img src="img/call.svg" alt=""></a>
+
+                </div>
+                <div class="contact-opt-phone">
+                    <a href=""><img src="img/mail.svg" alt=""></a>
+
+                </div>
+                <div class="contact-opt-phone">
+                    <a href=""><img src="img/location.svg" alt=""></a>
+                </div>
+            </div>
+        </span>
+        <span class="line"></span>
+        <div class="">
+            <span>
+                <h4>Terms&Conditions</h4>
+                <h4>PrivacyPolicy</h4>
+                <h4>Contact Us</h4>
+            </span>
+            <span class="line"></span>
+            <div class="find-us">
+                <div class="contact-opts-sec-phone">
+                    <h4 class="">Contact Us</h4>
+                    <div class="contact-opts-phone">
+                        <div class="contact-opt-phone">
+                            <a href=""><img src="img/call.svg" alt=""></a>
+
+                        </div>
+                        <div class="contact-opt-phone">
+                            <a href=""><img src="img/mail.svg" alt=""></a>
+
+                        </div>
+                        <div class="contact-opt-phone">
+                            <a href=""><img src="img/location.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-us-on">
+                    <h4 class="">Follow us on</h4>
+                    <div class="follow-us-opts">
+                        <div class="follow-us-opt">
+                            <a href=""><img src="img/icon/facebook_icon.png" alt=""></a>
+
+                        </div>
+                        <div class="follow-us-opt">
+                            <a href=""><img src="img/icon/instagram_icon.png" alt=""></a>
+
+                        </div>
+                        <div class="follow-us-opt">
+                            <a href=""><img src="img/icon/youtube_icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>notesindeed | Copyright &copy; 2024 notesindeed.com</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
