@@ -1070,6 +1070,9 @@ li img {
         gap: 1rem;
         position: relative;
     }
+    .head-title {
+        width: 0px;
+    }
     .head-title-desktop {
         display: none;
     }
