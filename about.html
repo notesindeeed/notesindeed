@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About - notesindeed</title>
+</head>
+<body>
+    <header class="head">
+        <div class="head-img"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+        <div class="head-title">
+            <div class="user-profile-phone">
+                <div class="user-profile">
+                    <img src="img/icon/profile-logo.jpg">
+                    <div>
+                        <p>Maqsood Ahmed</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+            </div>
+            <li><a href=""><img class="upload-icon" src="img/upload.svg" alt=""></a></li>
+            <li><a href="#"><img class="head-title-img" src="img/icon/home.jpeg" alt="">Home</a></li>
+            <li><a href="about.html"><img class="head-title-img" src="" alt="">About Us</a></li>
+            <li><a href="contact.html"><img class="head-title-img" src="" alt="">Contact Us</a></li>
+            <li><a href="setting.html"><img class="head-title-img" src="img/icon/setting.png" alt=""> Settings</a></li>
+            <li><a href="logout.html"><img class="head-title-img" src="img/icon/logout.png" alt=""> Logout</a></li>
+            <li class="user-profile-desktop"><img src="img/icon/profile-logo.jpg" onclick="settingsMenuToggle()" alt="">
+            </li>
+            
+        </div>
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/icon/profile-logo.jpg">
+                    <div>
+                        <p>Maqsood Ahmed</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="img/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+        <span class="search">
+            <input class="search-bar" type="text" placeholder="Search">
+            <img src="img/search.svg" alt="">
+        </span>
+
+        <div class="more-menu">
+            <img src="img/icon/Hamburger_icon.png" onclick="toggleMoreMenu()" alt="">
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
